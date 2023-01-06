@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if x==1 %}
+ <div style="position:absolute;left:43%;top:40%">
+
+    <form  method="post" action='Search' >
+
+        <input type="text" name="search" value="search for students">
+
+        <input type="button" value="search">
+
+    </form>
+
+    </div>
+{% endif %}
+
+{% if x==2 %}
+<table border="1">
+<tr>
+    <th>student_id</th>
+    <th>sex</th>
+    <th>Medu</th>
+    <th>Fedu</th>
+    <th>study_time</th>
+    <th>failures</th>
+    <th>paid</th>
+    <th>higer</th>
+    <th>freetime</th>
+    <th>goout</th>
+    <th>absences</th>
+    <th>G1</th>
+    <th>G2</th>
+    <th>G3</th>
+</tr>
+<tr>
+<td>{{student_data[0]}}</td>
+
+<td>{{student_data[1]}}</td>
+
+<td>{{student_data[2]}}</td>
+
+<td>{{student_data[3]}}</td>
+
+<td>{{student_data[4]}}</td>
+
+<td>{{student_data[5]}}</td>
+
+<td>{{student_data[6]}}</td>
+
+<td>{{student_data[7]}}</td>
+
+<td>{{student_data[8]}}</td>
+
+<td>{{student_data[9]}}</td>
+
+<td>{{student_data[10]}}</td>
+
+<td>{{student_data[11]}}</td>
+
+<td>{{student_data[12]}}</td>
+
+<td>{{student_data[13]}}</td>
+</tr>
+</table>
+{% endif %}
+</body>
+</html>
